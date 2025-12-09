@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { HeroButtons } from "@/components/home/HeroButtons";
+import { EquipmentCarousel } from "@/components/home/EquipmentCarousel";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
       </section >
 
       {/* Zones Section */}
-      < section id="zones" className="py-20 bg-background" >
+      <section id="zones" className="py-12 md:py-20 bg-background">
         <div className="container mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -78,7 +79,7 @@ export default function Home() {
       </section >
 
       {/* Equipment Section */}
-      < section className="py-20 bg-neutral-900/50 border-y border-border" >
+      <section className="py-12 md:py-20 bg-neutral-900/50 border-y border-border">
         <div className="container mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -89,20 +90,12 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            {/* Logos would go here, using text for now as placeholders if images fail */}
-            <span className="text-2xl font-bold text-white">PANATTA</span>
-            <span className="text-2xl font-bold text-white">NAUTILUS</span>
-            <span className="text-2xl font-bold text-white">REAL LEADER</span>
-            <span className="text-2xl font-bold text-white">SHUA</span>
-            <span className="text-2xl font-bold text-white">BOOTY BUILDER</span>
-            <span className="text-2xl font-bold text-white">NIKE</span>
-          </div>
+          <EquipmentCarousel />
         </div>
-      </section >
+      </section>
 
       {/* Recovery Section */}
-      < section id="recovery" className="py-20 bg-background" >
+      <section id="recovery" className="py-12 md:py-20 bg-background">
         <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -127,7 +120,7 @@ export default function Home() {
               Explore Recovery
             </Button>
           </div>
-          <div className="relative h-[400px] rounded-xl overflow-hidden border border-border bg-neutral-900">
+          <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden border border-border bg-neutral-900">
             {/* Placeholder for Recovery Image */}
             <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
               Recovery Zone Image
@@ -137,7 +130,7 @@ export default function Home() {
       </section >
 
       {/* Reviews Section */}
-      < section id="reviews" className="py-20 bg-neutral-900/30" >
+      <section id="reviews" className="py-12 md:py-20 bg-neutral-900/30">
         <div className="container mx-auto space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-center text-white">
             Real words from <span className="text-primary">real members</span>
@@ -166,9 +159,9 @@ export default function Home() {
       </section >
 
       {/* CTA Section */}
-      < section className="py-20 bg-primary" >
+      <section className="py-12 md:py-20 bg-primary">
         <div className="container mx-auto text-center space-y-6">
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black">
+          <h2 className="text-3xl md:text-6xl font-black tracking-tighter text-black">
             READY TO FEEL THE ENERGY?
           </h2>
           <p className="text-xl md:text-2xl text-black/80 max-w-2xl mx-auto font-medium">
