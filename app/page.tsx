@@ -11,12 +11,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { HeroButtons } from "@/components/home/HeroButtons";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           {/* Placeholder for Hero Video/Image */}
           <div className="w-full h-full bg-neutral-900 opacity-50" />
@@ -35,19 +36,12 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
             Elite equipment, smart zones, recovery floor, and a stunning group studio in Indiranagar.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-            <Button size="lg" className="bg-primary text-black hover:bg-primary/90 text-lg px-8 h-14">
-              Join Now <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-black text-lg px-8 h-14">
-              Book a Tour
-            </Button>
-          </div>
+          <HeroButtons />
         </div>
-      </section>
+      </section >
 
       {/* Zones Section */}
-      <section id="zones" className="py-20 bg-background">
+      < section id="zones" className="py-20 bg-background" >
         <div className="container mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -81,10 +75,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Equipment Section */}
-      <section className="py-20 bg-neutral-900/50 border-y border-border">
+      < section className="py-20 bg-neutral-900/50 border-y border-border" >
         <div className="container mx-auto space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -105,10 +99,10 @@ export default function Home() {
             <span className="text-2xl font-bold text-white">NIKE</span>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Recovery Section */}
-      <section id="recovery" className="py-20 bg-background">
+      < section id="recovery" className="py-20 bg-background" >
         <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-white">
@@ -140,10 +134,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-20 bg-neutral-900/30">
+      < section id="reviews" className="py-20 bg-neutral-900/30" >
         <div className="container mx-auto space-y-12">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-center text-white">
             Real words from <span className="text-primary">real members</span>
@@ -169,10 +163,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary">
+      < section className="py-20 bg-primary" >
         <div className="container mx-auto text-center space-y-6">
           <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black">
             READY TO FEEL THE ENERGY?
@@ -184,7 +178,7 @@ export default function Home() {
             Start Your Journey
           </Button>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
